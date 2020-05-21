@@ -37,7 +37,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CalcTextBox = new System.Windows.Forms.TextBox();
             this.clr = new System.Windows.Forms.Button();
             this.num9 = new System.Windows.Forms.Button();
             this.num6 = new System.Windows.Forms.Button();
@@ -55,6 +55,18 @@
             this.num1 = new System.Windows.Forms.Button();
             this.AllSelect = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ChangeMoneyTextBox = new System.Windows.Forms.TextBox();
+            this.TakeMoneyTextBox = new System.Windows.Forms.TextBox();
+            this.DiscountPriceTextBox = new System.Windows.Forms.TextBox();
+            this.DueMoneyTextBox = new System.Windows.Forms.TextBox();
+            this.TotalPriceTextBox = new System.Windows.Forms.TextBox();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TotalPriceLabel = new System.Windows.Forms.Label();
             this.card = new System.Windows.Forms.Button();
             this.cash = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -85,22 +97,11 @@
             this.menu2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listViewOrderdetail = new System.Windows.Forms.ListView();
             this.mName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mprice = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.total = new System.Windows.Forms.TextBox();
-            this.dismoney = new System.Windows.Forms.TextBox();
-            this.duemoney = new System.Windows.Forms.TextBox();
-            this.takemoney = new System.Windows.Forms.TextBox();
-            this.change = new System.Windows.Forms.TextBox();
+            this.TableNumLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -198,7 +199,7 @@
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.CalcTextBox);
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(277, 53);
@@ -213,16 +214,15 @@
             this.panel5.Size = new System.Drawing.Size(71, 53);
             this.panel5.TabIndex = 33;
             // 
-            // textBox1
+            // CalcTextBox
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(71, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 34);
-            this.textBox1.TabIndex = 32;
-            this.textBox1.Text = "3333";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CalcTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CalcTextBox.Font = new System.Drawing.Font("Arial", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalcTextBox.Location = new System.Drawing.Point(71, 9);
+            this.CalcTextBox.Name = "CalcTextBox";
+            this.CalcTextBox.Size = new System.Drawing.Size(203, 34);
+            this.CalcTextBox.TabIndex = 32;
+            this.CalcTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // clr
             // 
@@ -235,6 +235,7 @@
             this.clr.Size = new System.Drawing.Size(71, 64);
             this.clr.TabIndex = 16;
             this.clr.UseVisualStyleBackColor = true;
+            this.clr.Click += new System.EventHandler(this.clr_Click);
             // 
             // num9
             // 
@@ -247,6 +248,7 @@
             this.num9.Size = new System.Drawing.Size(71, 64);
             this.num9.TabIndex = 16;
             this.num9.UseVisualStyleBackColor = true;
+            this.num9.Click += new System.EventHandler(this.num9_Click);
             // 
             // num6
             // 
@@ -259,6 +261,7 @@
             this.num6.Size = new System.Drawing.Size(71, 64);
             this.num6.TabIndex = 16;
             this.num6.UseVisualStyleBackColor = true;
+            this.num6.Click += new System.EventHandler(this.num6_Click);
             // 
             // num3
             // 
@@ -271,6 +274,7 @@
             this.num3.Size = new System.Drawing.Size(71, 64);
             this.num3.TabIndex = 16;
             this.num3.UseVisualStyleBackColor = true;
+            this.num3.Click += new System.EventHandler(this.num3_Click);
             // 
             // cntUpdate
             // 
@@ -295,6 +299,7 @@
             this.num0.Size = new System.Drawing.Size(71, 64);
             this.num0.TabIndex = 16;
             this.num0.UseVisualStyleBackColor = true;
+            this.num0.Click += new System.EventHandler(this.num0_Click);
             // 
             // num00
             // 
@@ -307,6 +312,7 @@
             this.num00.Size = new System.Drawing.Size(71, 64);
             this.num00.TabIndex = 16;
             this.num00.UseVisualStyleBackColor = true;
+            this.num00.Click += new System.EventHandler(this.num00_Click);
             // 
             // mdiscount
             // 
@@ -343,6 +349,7 @@
             this.num5.Size = new System.Drawing.Size(71, 64);
             this.num5.TabIndex = 16;
             this.num5.UseVisualStyleBackColor = true;
+            this.num5.Click += new System.EventHandler(this.num5_Click);
             // 
             // num8
             // 
@@ -355,6 +362,7 @@
             this.num8.Size = new System.Drawing.Size(71, 64);
             this.num8.TabIndex = 16;
             this.num8.UseVisualStyleBackColor = true;
+            this.num8.Click += new System.EventHandler(this.num8_Click);
             // 
             // num4
             // 
@@ -367,6 +375,7 @@
             this.num4.Size = new System.Drawing.Size(71, 64);
             this.num4.TabIndex = 16;
             this.num4.UseVisualStyleBackColor = true;
+            this.num4.Click += new System.EventHandler(this.num4_Click);
             // 
             // num7
             // 
@@ -379,6 +388,7 @@
             this.num7.Size = new System.Drawing.Size(71, 64);
             this.num7.TabIndex = 16;
             this.num7.UseVisualStyleBackColor = true;
+            this.num7.Click += new System.EventHandler(this.num7_Click);
             // 
             // num2
             // 
@@ -391,6 +401,7 @@
             this.num2.Size = new System.Drawing.Size(71, 64);
             this.num2.TabIndex = 16;
             this.num2.UseVisualStyleBackColor = true;
+            this.num2.Click += new System.EventHandler(this.num2_Click);
             // 
             // num1
             // 
@@ -403,6 +414,7 @@
             this.num1.Size = new System.Drawing.Size(71, 64);
             this.num1.TabIndex = 16;
             this.num1.UseVisualStyleBackColor = true;
+            this.num1.Click += new System.EventHandler(this.num1_Click);
             // 
             // AllSelect
             // 
@@ -420,24 +432,168 @@
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.change);
-            this.panel2.Controls.Add(this.takemoney);
-            this.panel2.Controls.Add(this.dismoney);
-            this.panel2.Controls.Add(this.duemoney);
-            this.panel2.Controls.Add(this.total);
+            this.panel2.Controls.Add(this.ChangeMoneyTextBox);
+            this.panel2.Controls.Add(this.TakeMoneyTextBox);
+            this.panel2.Controls.Add(this.DiscountPriceTextBox);
+            this.panel2.Controls.Add(this.DueMoneyTextBox);
+            this.panel2.Controls.Add(this.TotalPriceTextBox);
             this.panel2.Controls.Add(this.panel9);
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.TotalPriceLabel);
             this.panel2.Controls.Add(this.card);
             this.panel2.Controls.Add(this.cash);
             this.panel2.Location = new System.Drawing.Point(12, 377);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(226, 320);
             this.panel2.TabIndex = 16;
+            // 
+            // ChangeMoneyTextBox
+            // 
+            this.ChangeMoneyTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.ChangeMoneyTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ChangeMoneyTextBox.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChangeMoneyTextBox.ForeColor = System.Drawing.Color.Gold;
+            this.ChangeMoneyTextBox.Location = new System.Drawing.Point(91, 218);
+            this.ChangeMoneyTextBox.Name = "ChangeMoneyTextBox";
+            this.ChangeMoneyTextBox.Size = new System.Drawing.Size(123, 22);
+            this.ChangeMoneyTextBox.TabIndex = 20;
+            this.ChangeMoneyTextBox.Text = "0";
+            this.ChangeMoneyTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // TakeMoneyTextBox
+            // 
+            this.TakeMoneyTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.TakeMoneyTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TakeMoneyTextBox.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TakeMoneyTextBox.ForeColor = System.Drawing.Color.Gold;
+            this.TakeMoneyTextBox.Location = new System.Drawing.Point(91, 142);
+            this.TakeMoneyTextBox.Name = "TakeMoneyTextBox";
+            this.TakeMoneyTextBox.Size = new System.Drawing.Size(123, 22);
+            this.TakeMoneyTextBox.TabIndex = 20;
+            this.TakeMoneyTextBox.Text = "0";
+            this.TakeMoneyTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // DiscountPriceTextBox
+            // 
+            this.DiscountPriceTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.DiscountPriceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DiscountPriceTextBox.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DiscountPriceTextBox.ForeColor = System.Drawing.Color.Gold;
+            this.DiscountPriceTextBox.Location = new System.Drawing.Point(91, 46);
+            this.DiscountPriceTextBox.Name = "DiscountPriceTextBox";
+            this.DiscountPriceTextBox.Size = new System.Drawing.Size(123, 22);
+            this.DiscountPriceTextBox.TabIndex = 20;
+            this.DiscountPriceTextBox.Text = "0";
+            this.DiscountPriceTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // DueMoneyTextBox
+            // 
+            this.DueMoneyTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.DueMoneyTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DueMoneyTextBox.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DueMoneyTextBox.ForeColor = System.Drawing.Color.Orange;
+            this.DueMoneyTextBox.Location = new System.Drawing.Point(92, 107);
+            this.DueMoneyTextBox.Name = "DueMoneyTextBox";
+            this.DueMoneyTextBox.Size = new System.Drawing.Size(123, 22);
+            this.DueMoneyTextBox.TabIndex = 20;
+            this.DueMoneyTextBox.Text = "0";
+            this.DueMoneyTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // TotalPriceTextBox
+            // 
+            this.TotalPriceTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.TotalPriceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TotalPriceTextBox.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPriceTextBox.ForeColor = System.Drawing.Color.Orange;
+            this.TotalPriceTextBox.Location = new System.Drawing.Point(91, 11);
+            this.TotalPriceTextBox.Name = "TotalPriceTextBox";
+            this.TotalPriceTextBox.Size = new System.Drawing.Size(123, 22);
+            this.TotalPriceTextBox.TabIndex = 20;
+            this.TotalPriceTextBox.Text = "0";
+            this.TotalPriceTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // panel9
+            // 
+            this.panel9.Location = new System.Drawing.Point(11, 187);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(204, 1);
+            this.panel9.TabIndex = 19;
+            // 
+            // panel8
+            // 
+            this.panel8.Location = new System.Drawing.Point(10, 90);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(204, 1);
+            this.panel8.TabIndex = 19;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.label5.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(11, 218);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(74, 21);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "거스름돈";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.label4.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(11, 143);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 21);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "받은금액";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.label3.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(11, 108);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 21);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "받을금액";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.label2.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(11, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 21);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "할인금액";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TotalPriceLabel
+            // 
+            this.TotalPriceLabel.AutoSize = true;
+            this.TotalPriceLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
+            this.TotalPriceLabel.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TotalPriceLabel.ForeColor = System.Drawing.Color.White;
+            this.TotalPriceLabel.Location = new System.Drawing.Point(11, 12);
+            this.TotalPriceLabel.Name = "TotalPriceLabel";
+            this.TotalPriceLabel.Size = new System.Drawing.Size(74, 21);
+            this.TotalPriceLabel.TabIndex = 17;
+            this.TotalPriceLabel.Text = "공급가액";
+            this.TotalPriceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // card
             // 
@@ -450,6 +606,7 @@
             this.card.Size = new System.Drawing.Size(113, 52);
             this.card.TabIndex = 16;
             this.card.UseVisualStyleBackColor = true;
+            this.card.Click += new System.EventHandler(this.card_Click);
             // 
             // cash
             // 
@@ -462,6 +619,7 @@
             this.cash.Size = new System.Drawing.Size(113, 52);
             this.cash.TabIndex = 16;
             this.cash.UseVisualStyleBackColor = true;
+            this.cash.Click += new System.EventHandler(this.cash_Click);
             // 
             // panel6
             // 
@@ -815,32 +973,35 @@
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
             this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Controls.Add(this.listView1);
+            this.panel7.Controls.Add(this.listViewOrderdetail);
             this.panel7.Location = new System.Drawing.Point(12, 75);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(425, 296);
             this.panel7.TabIndex = 19;
             // 
-            // listView1
+            // listViewOrderdetail
             // 
-            this.listView1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listView1.BackgroundImage")));
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewOrderdetail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("listViewOrderdetail.BackgroundImage")));
+            this.listViewOrderdetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listViewOrderdetail.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.mName,
             this.mCnt,
             this.mprice});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(419, 289);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewOrderdetail.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.listViewOrderdetail.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.listViewOrderdetail.HideSelection = false;
+            this.listViewOrderdetail.Location = new System.Drawing.Point(3, 4);
+            this.listViewOrderdetail.Name = "listViewOrderdetail";
+            this.listViewOrderdetail.Size = new System.Drawing.Size(419, 289);
+            this.listViewOrderdetail.TabIndex = 0;
+            this.listViewOrderdetail.UseCompatibleStateImageBehavior = false;
+            this.listViewOrderdetail.View = System.Windows.Forms.View.Details;
+            this.listViewOrderdetail.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listViewOrderdetail_ColumnWidthChanging);
             // 
             // mName
             // 
             this.mName.Text = "상품명";
-            this.mName.Width = 229;
+            this.mName.Width = 223;
             // 
             // mCnt
             // 
@@ -852,165 +1013,33 @@
             // 
             this.mprice.Text = "가격";
             this.mprice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.mprice.Width = 87;
+            this.mprice.Width = 110;
             // 
-            // label1
+            // TableNumLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.label1.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(11, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 21);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "공급가액";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TableNumLabel.Font = new System.Drawing.Font("함초롬돋움", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TableNumLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TableNumLabel.Location = new System.Drawing.Point(346, 28);
+            this.TableNumLabel.Name = "TableNumLabel";
+            this.TableNumLabel.Size = new System.Drawing.Size(189, 42);
+            this.TableNumLabel.TabIndex = 20;
+            this.TableNumLabel.Text = "1번 테이블";
+            this.TableNumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.label2.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(11, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 21);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "할인금액";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.label3.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(11, 108);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 21);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "받을금액";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.label4.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(11, 143);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 21);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "받은금액";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.label5.Font = new System.Drawing.Font("함초롬돋움", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(11, 218);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(74, 21);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "거스름돈";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel8
-            // 
-            this.panel8.Location = new System.Drawing.Point(10, 90);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(204, 1);
-            this.panel8.TabIndex = 19;
-            // 
-            // panel9
-            // 
-            this.panel9.Location = new System.Drawing.Point(11, 187);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(204, 1);
-            this.panel9.TabIndex = 19;
-            // 
-            // total
-            // 
-            this.total.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.total.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.total.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.total.ForeColor = System.Drawing.Color.Orange;
-            this.total.Location = new System.Drawing.Point(91, 11);
-            this.total.Name = "total";
-            this.total.Size = new System.Drawing.Size(123, 22);
-            this.total.TabIndex = 20;
-            this.total.Text = "0";
-            this.total.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // dismoney
-            // 
-            this.dismoney.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.dismoney.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dismoney.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dismoney.ForeColor = System.Drawing.Color.Gold;
-            this.dismoney.Location = new System.Drawing.Point(91, 46);
-            this.dismoney.Name = "dismoney";
-            this.dismoney.Size = new System.Drawing.Size(123, 22);
-            this.dismoney.TabIndex = 20;
-            this.dismoney.Text = "0";
-            this.dismoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // duemoney
-            // 
-            this.duemoney.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.duemoney.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.duemoney.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.duemoney.ForeColor = System.Drawing.Color.Orange;
-            this.duemoney.Location = new System.Drawing.Point(92, 107);
-            this.duemoney.Name = "duemoney";
-            this.duemoney.Size = new System.Drawing.Size(123, 22);
-            this.duemoney.TabIndex = 20;
-            this.duemoney.Text = "0";
-            this.duemoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // takemoney
-            // 
-            this.takemoney.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.takemoney.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.takemoney.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.takemoney.ForeColor = System.Drawing.Color.Gold;
-            this.takemoney.Location = new System.Drawing.Point(91, 142);
-            this.takemoney.Name = "takemoney";
-            this.takemoney.Size = new System.Drawing.Size(123, 22);
-            this.takemoney.TabIndex = 20;
-            this.takemoney.Text = "0";
-            this.takemoney.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // change
-            // 
-            this.change.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(34)))), ((int)(((byte)(64)))));
-            this.change.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.change.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.change.ForeColor = System.Drawing.Color.Gold;
-            this.change.Location = new System.Drawing.Point(91, 218);
-            this.change.Name = "change";
-            this.change.Size = new System.Drawing.Size(123, 22);
-            this.change.TabIndex = 20;
-            this.change.Text = "0";
-            this.change.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // Form3
+            // orderdetailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.TableNumLabel);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox3);
-            this.Name = "Form3";
+            this.Name = "orderdetailForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -1032,7 +1061,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button card;
         private System.Windows.Forms.Button cash;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CalcTextBox;
         private System.Windows.Forms.Button cntUpdate;
         private System.Windows.Forms.Button discount;
         private System.Windows.Forms.Button mdiscount;
@@ -1082,7 +1111,7 @@
         private System.Windows.Forms.Button nextmenu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listViewOrderdetail;
         private System.Windows.Forms.ColumnHeader mName;
         private System.Windows.Forms.ColumnHeader mCnt;
         private System.Windows.Forms.ColumnHeader mprice;
@@ -1091,12 +1120,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label TotalPriceLabel;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox change;
-        private System.Windows.Forms.TextBox takemoney;
-        private System.Windows.Forms.TextBox dismoney;
-        private System.Windows.Forms.TextBox duemoney;
-        private System.Windows.Forms.TextBox total;
+        private System.Windows.Forms.TextBox ChangeMoneyTextBox;
+        private System.Windows.Forms.TextBox TakeMoneyTextBox;
+        private System.Windows.Forms.TextBox DiscountPriceTextBox;
+        private System.Windows.Forms.TextBox DueMoneyTextBox;
+        private System.Windows.Forms.TextBox TotalPriceTextBox;
+        private System.Windows.Forms.Label TableNumLabel;
     }
 }

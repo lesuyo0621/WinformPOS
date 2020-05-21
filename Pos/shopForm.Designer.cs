@@ -102,6 +102,7 @@
             this.Table10.Text = "10번 테이블";
             this.Table10.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Table10.UseVisualStyleBackColor = false;
+            this.Table10.Click += new System.EventHandler(this.Table10_Click);
             // 
             // Table9
             // 
@@ -121,6 +122,7 @@
             this.Table9.Text = "9번 테이블";
             this.Table9.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Table9.UseVisualStyleBackColor = false;
+            this.Table9.Click += new System.EventHandler(this.Table9_Click);
             // 
             // Table8
             // 
@@ -140,6 +142,7 @@
             this.Table8.Text = "8번 테이블";
             this.Table8.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Table8.UseVisualStyleBackColor = false;
+            this.Table8.Click += new System.EventHandler(this.Table8_Click);
             // 
             // Table7
             // 
@@ -159,6 +162,7 @@
             this.Table7.Text = "7번 테이블";
             this.Table7.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Table7.UseVisualStyleBackColor = false;
+            this.Table7.Click += new System.EventHandler(this.Table7_Click);
             // 
             // Table6
             // 
@@ -178,6 +182,7 @@
             this.Table6.Text = "6번 테이블";
             this.Table6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Table6.UseVisualStyleBackColor = false;
+            this.Table6.Click += new System.EventHandler(this.Table6_Click);
             // 
             // Table5
             // 
@@ -197,6 +202,7 @@
             this.Table5.Text = "5번 테이블";
             this.Table5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Table5.UseVisualStyleBackColor = false;
+            this.Table5.Click += new System.EventHandler(this.Table5_Click);
             // 
             // Table4
             // 
@@ -216,6 +222,7 @@
             this.Table4.Text = "4번 테이블";
             this.Table4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Table4.UseVisualStyleBackColor = false;
+            this.Table4.Click += new System.EventHandler(this.Table4_Click);
             // 
             // Table3
             // 
@@ -235,6 +242,7 @@
             this.Table3.Text = "3번 테이블";
             this.Table3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Table3.UseVisualStyleBackColor = false;
+            this.Table3.Click += new System.EventHandler(this.Table3_Click);
             // 
             // Table2
             // 
@@ -254,6 +262,7 @@
             this.Table2.Text = "2번 테이블";
             this.Table2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.Table2.UseVisualStyleBackColor = false;
+            this.Table2.Click += new System.EventHandler(this.Table2_Click);
             // 
             // Table1
             // 
@@ -286,6 +295,7 @@
             this.move.Size = new System.Drawing.Size(84, 31);
             this.move.TabIndex = 11;
             this.move.UseVisualStyleBackColor = true;
+            this.move.Click += new System.EventHandler(this.move_Click);
             // 
             // reservation
             // 
@@ -298,6 +308,7 @@
             this.reservation.Size = new System.Drawing.Size(84, 31);
             this.reservation.TabIndex = 12;
             this.reservation.UseVisualStyleBackColor = true;
+            this.reservation.Click += new System.EventHandler(this.reservation_Click);
             // 
             // print
             // 
@@ -322,6 +333,7 @@
             this.inout.Size = new System.Drawing.Size(84, 31);
             this.inout.TabIndex = 14;
             this.inout.UseVisualStyleBackColor = true;
+            this.inout.Click += new System.EventHandler(this.inout_Click);
             // 
             // statement
             // 
@@ -346,6 +358,7 @@
             this.order.Size = new System.Drawing.Size(84, 31);
             this.order.TabIndex = 16;
             this.order.UseVisualStyleBackColor = true;
+            this.order.Click += new System.EventHandler(this.order_Click);
             // 
             // setting
             // 

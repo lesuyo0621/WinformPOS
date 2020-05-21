@@ -21,10 +21,10 @@ namespace Pos
         public subposForm()
         {
             InitializeComponent();
-            SetDefaultValue();
+            SetSubPosFormDefaultValue();
         }
 
-        private void SetDefaultValue()
+        private void SetSubPosFormDefaultValue()
         {
             panel2.Hide();
             panel3.Hide();
@@ -229,52 +229,61 @@ namespace Pos
         private void comp1_Click(object sender, EventArgs e)
         {
             UpdateCookState();
-            SetDefaultValue();
+            SetSubPosFormDefaultValue();
         }
 
         private void comp2_Click(object sender, EventArgs e)
         {
-
+            UpdateCookState();
+            SetSubPosFormDefaultValue();
         }
 
         private void comp3_Click(object sender, EventArgs e)
         {
-
+            UpdateCookState();
+            SetSubPosFormDefaultValue();
         }
 
         private void comp4_Click(object sender, EventArgs e)
         {
-
+            UpdateCookState();
+            SetSubPosFormDefaultValue();
         }
 
         private void comp5_Click(object sender, EventArgs e)
         {
-
+            UpdateCookState();
+            SetSubPosFormDefaultValue();
         }
 
         private void comp6_Click(object sender, EventArgs e)
         {
-
+            UpdateCookState();
+            SetSubPosFormDefaultValue();
         }
 
         private void comp7_Click(object sender, EventArgs e)
         {
-
+            UpdateCookState();
+            SetSubPosFormDefaultValue();
         }
 
         private void comp8_Click(object sender, EventArgs e)
         {
-
+            UpdateCookState();
+            SetSubPosFormDefaultValue();
         }
 
         private void comp9_Click(object sender, EventArgs e)
         {
-
+            UpdateCookState();
+            SetSubPosFormDefaultValue();
         }
 
         private void comp10_Click(object sender, EventArgs e)
         {
-
+            UpdateCookState();
+            SetSubPosFormDefaultValue();
         }
     }
 }

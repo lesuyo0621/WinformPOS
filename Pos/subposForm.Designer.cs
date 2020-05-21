@@ -33,64 +33,64 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.comp10 = new System.Windows.Forms.Button();
             this.listView10 = new System.Windows.Forms.ListView();
+            this.oTableNum10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mName10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel6 = new System.Windows.Forms.Panel();
             this.comp5 = new System.Windows.Forms.Button();
             this.listView5 = new System.Windows.Forms.ListView();
+            this.oTableNum5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mName5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel10 = new System.Windows.Forms.Panel();
             this.comp9 = new System.Windows.Forms.Button();
             this.listView9 = new System.Windows.Forms.ListView();
+            this.oTableNum9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mName9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel5 = new System.Windows.Forms.Panel();
             this.comp4 = new System.Windows.Forms.Button();
             this.listView4 = new System.Windows.Forms.ListView();
+            this.oTableNum4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mName4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel9 = new System.Windows.Forms.Panel();
             this.comp8 = new System.Windows.Forms.Button();
             this.listView8 = new System.Windows.Forms.ListView();
+            this.oTableNum8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mName8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4 = new System.Windows.Forms.Panel();
             this.comp3 = new System.Windows.Forms.Button();
             this.listView3 = new System.Windows.Forms.ListView();
+            this.oTableNum3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mName3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel8 = new System.Windows.Forms.Panel();
             this.comp7 = new System.Windows.Forms.Button();
             this.listView7 = new System.Windows.Forms.ListView();
+            this.oTableNum7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mName7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel3 = new System.Windows.Forms.Panel();
             this.comp2 = new System.Windows.Forms.Button();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.oTableNum2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.mName2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.mCnt2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel7 = new System.Windows.Forms.Panel();
             this.comp6 = new System.Windows.Forms.Button();
             this.listView6 = new System.Windows.Forms.ListView();
+            this.oTableNum6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mName6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
             this.comp1 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.oTableNum1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mName1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.mCnt1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.mName2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.mCnt2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.oTableNum2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.oTableNum3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.oTableNum4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.oTableNum5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.oTableNum6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.oTableNum7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.oTableNum8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.oTableNum9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.oTableNum10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.oTableNum1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -158,6 +158,7 @@
             this.oTableNum10,
             this.mName10,
             this.mCnt10});
+            this.listView10.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView10.HideSelection = false;
             this.listView10.Location = new System.Drawing.Point(1, 3);
             this.listView10.Name = "listView10";
@@ -166,6 +167,12 @@
             this.listView10.UseCompatibleStateImageBehavior = false;
             this.listView10.View = System.Windows.Forms.View.Details;
             this.listView10.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView10_ColumnWidthChanging);
+            // 
+            // oTableNum10
+            // 
+            this.oTableNum10.Text = "번호";
+            this.oTableNum10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum10.Width = 40;
             // 
             // mName10
             // 
@@ -209,6 +216,7 @@
             this.oTableNum5,
             this.mName5,
             this.mCnt5});
+            this.listView5.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView5.HideSelection = false;
             this.listView5.Location = new System.Drawing.Point(1, 3);
             this.listView5.Name = "listView5";
@@ -217,6 +225,12 @@
             this.listView5.UseCompatibleStateImageBehavior = false;
             this.listView5.View = System.Windows.Forms.View.Details;
             this.listView5.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView5_ColumnWidthChanging);
+            // 
+            // oTableNum5
+            // 
+            this.oTableNum5.Text = "번호";
+            this.oTableNum5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum5.Width = 40;
             // 
             // mName5
             // 
@@ -260,6 +274,7 @@
             this.oTableNum9,
             this.mName9,
             this.mCnt9});
+            this.listView9.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView9.HideSelection = false;
             this.listView9.Location = new System.Drawing.Point(1, 3);
             this.listView9.Name = "listView9";
@@ -268,6 +283,12 @@
             this.listView9.UseCompatibleStateImageBehavior = false;
             this.listView9.View = System.Windows.Forms.View.Details;
             this.listView9.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView9_ColumnWidthChanging);
+            // 
+            // oTableNum9
+            // 
+            this.oTableNum9.Text = "번호";
+            this.oTableNum9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum9.Width = 40;
             // 
             // mName9
             // 
@@ -311,6 +332,7 @@
             this.oTableNum4,
             this.mName4,
             this.mCnt4});
+            this.listView4.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView4.HideSelection = false;
             this.listView4.Location = new System.Drawing.Point(1, 3);
             this.listView4.Name = "listView4";
@@ -319,6 +341,12 @@
             this.listView4.UseCompatibleStateImageBehavior = false;
             this.listView4.View = System.Windows.Forms.View.Details;
             this.listView4.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView4_ColumnWidthChanging);
+            // 
+            // oTableNum4
+            // 
+            this.oTableNum4.Text = "번호";
+            this.oTableNum4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum4.Width = 40;
             // 
             // mName4
             // 
@@ -362,6 +390,7 @@
             this.oTableNum8,
             this.mName8,
             this.mCnt8});
+            this.listView8.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView8.HideSelection = false;
             this.listView8.Location = new System.Drawing.Point(1, 3);
             this.listView8.Name = "listView8";
@@ -370,6 +399,12 @@
             this.listView8.UseCompatibleStateImageBehavior = false;
             this.listView8.View = System.Windows.Forms.View.Details;
             this.listView8.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView8_ColumnWidthChanging);
+            // 
+            // oTableNum8
+            // 
+            this.oTableNum8.Text = "번호";
+            this.oTableNum8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum8.Width = 40;
             // 
             // mName8
             // 
@@ -413,6 +448,7 @@
             this.oTableNum3,
             this.mName3,
             this.mCnt3});
+            this.listView3.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView3.HideSelection = false;
             this.listView3.Location = new System.Drawing.Point(1, 3);
             this.listView3.Name = "listView3";
@@ -421,6 +457,12 @@
             this.listView3.UseCompatibleStateImageBehavior = false;
             this.listView3.View = System.Windows.Forms.View.Details;
             this.listView3.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView3_ColumnWidthChanging);
+            // 
+            // oTableNum3
+            // 
+            this.oTableNum3.Text = "번호";
+            this.oTableNum3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum3.Width = 40;
             // 
             // mName3
             // 
@@ -464,6 +506,7 @@
             this.oTableNum7,
             this.mName7,
             this.mCnt7});
+            this.listView7.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView7.HideSelection = false;
             this.listView7.Location = new System.Drawing.Point(1, 3);
             this.listView7.Name = "listView7";
@@ -472,6 +515,12 @@
             this.listView7.UseCompatibleStateImageBehavior = false;
             this.listView7.View = System.Windows.Forms.View.Details;
             this.listView7.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView7_ColumnWidthChanging);
+            // 
+            // oTableNum7
+            // 
+            this.oTableNum7.Text = "번호";
+            this.oTableNum7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum7.Width = 40;
             // 
             // mName7
             // 
@@ -509,6 +558,39 @@
             this.comp2.UseVisualStyleBackColor = false;
             this.comp2.Click += new System.EventHandler(this.comp2_Click);
             // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.oTableNum2,
+            this.mName2,
+            this.mCnt2});
+            this.listView2.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(1, 3);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(244, 270);
+            this.listView2.TabIndex = 0;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            this.listView2.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView2_ColumnWidthChanging);
+            // 
+            // oTableNum2
+            // 
+            this.oTableNum2.Text = "번호";
+            this.oTableNum2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum2.Width = 40;
+            // 
+            // mName2
+            // 
+            this.mName2.Text = "상품명";
+            this.mName2.Width = 160;
+            // 
+            // mCnt2
+            // 
+            this.mCnt2.Text = "수량";
+            this.mCnt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mCnt2.Width = 40;
+            // 
             // panel7
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
@@ -540,6 +622,7 @@
             this.oTableNum6,
             this.mName6,
             this.mCnt6});
+            this.listView6.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView6.HideSelection = false;
             this.listView6.Location = new System.Drawing.Point(1, 3);
             this.listView6.Name = "listView6";
@@ -548,6 +631,12 @@
             this.listView6.UseCompatibleStateImageBehavior = false;
             this.listView6.View = System.Windows.Forms.View.Details;
             this.listView6.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView6_ColumnWidthChanging);
+            // 
+            // oTableNum6
+            // 
+            this.oTableNum6.Text = "번호";
+            this.oTableNum6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum6.Width = 40;
             // 
             // mName6
             // 
@@ -591,6 +680,7 @@
             this.oTableNum1,
             this.mName1,
             this.mCnt1});
+            this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(1, 3);
             this.listView1.Name = "listView1";
@@ -599,6 +689,12 @@
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             this.listView1.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView1_ColumnWidthChanging);
+            // 
+            // oTableNum1
+            // 
+            this.oTableNum1.Text = "번호";
+            this.oTableNum1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.oTableNum1.Width = 40;
             // 
             // mName1
             // 
@@ -619,92 +715,6 @@
             this.pictureBox3.Size = new System.Drawing.Size(175, 51);
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
-            // 
-            // mName2
-            // 
-            this.mName2.Text = "상품명";
-            this.mName2.Width = 160;
-            // 
-            // mCnt2
-            // 
-            this.mCnt2.Text = "수량";
-            this.mCnt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.mCnt2.Width = 40;
-            // 
-            // listView2
-            // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.oTableNum2,
-            this.mName2,
-            this.mCnt2});
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(1, 3);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(244, 270);
-            this.listView2.TabIndex = 0;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            this.listView2.ColumnWidthChanging += new System.Windows.Forms.ColumnWidthChangingEventHandler(this.listView2_ColumnWidthChanging);
-            // 
-            // oTableNum2
-            // 
-            this.oTableNum2.Text = "번호";
-            this.oTableNum2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum2.Width = 40;
-            // 
-            // oTableNum3
-            // 
-            this.oTableNum3.Text = "번호";
-            this.oTableNum3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum3.Width = 40;
-            // 
-            // oTableNum4
-            // 
-            this.oTableNum4.Text = "번호";
-            this.oTableNum4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum4.Width = 40;
-            // 
-            // oTableNum5
-            // 
-            this.oTableNum5.Text = "번호";
-            this.oTableNum5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum5.Width = 40;
-            // 
-            // oTableNum6
-            // 
-            this.oTableNum6.Text = "번호";
-            this.oTableNum6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum6.Width = 40;
-            // 
-            // oTableNum7
-            // 
-            this.oTableNum7.Text = "번호";
-            this.oTableNum7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum7.Width = 40;
-            // 
-            // oTableNum8
-            // 
-            this.oTableNum8.Text = "번호";
-            this.oTableNum8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum8.Width = 40;
-            // 
-            // oTableNum9
-            // 
-            this.oTableNum9.Text = "번호";
-            this.oTableNum9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum9.Width = 40;
-            // 
-            // oTableNum10
-            // 
-            this.oTableNum10.Text = "번호";
-            this.oTableNum10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum10.Width = 40;
-            // 
-            // oTableNum1
-            // 
-            this.oTableNum1.Text = "번호";
-            this.oTableNum1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.oTableNum1.Width = 40;
             // 
             // subposForm
             // 
